@@ -1,6 +1,6 @@
-#Penny Assessment
+# Penny Assessment
 
-##Technology Requirements:
+## Technology Requirements:
 MEAN Stack
 Use Nx.dev to create a monorepo
 Use Angular for UI and NGRX for state management
