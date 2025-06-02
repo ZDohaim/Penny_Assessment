@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Color Palette - CSS Custom Properties */
+:root {
+  --blue: #27384c;
+  --yellow: #ffb300;
+  --white: #fcfbfa;
+
+  /* You can also add semantic color names */
+  --primary: #27384c;
+  --accent: #ffb300;
+  --background: #fcfbfa;
+}
+
+/* Optional: Base styles using your colors */
+body {
+  background-color: var(--white);
+  color: var(--blue);
+}

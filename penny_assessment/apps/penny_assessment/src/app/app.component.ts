@@ -1,13 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { Store } from '@ngrx/store';
+import * as AuthActions from './store/auth/auth.actions';
 
 @Component({
-  imports: [NxWelcomeComponent, RouterModule],
+  standalone: true,
+  imports: [RouterModule],
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  template: ` <router-outlet></router-outlet> `,
+  styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'penny_assessment';
+
+  constructor(private store: Store) {}
+
+  ngOnInit(): void {
+    // Load user from storage on app initialization
+    this.store.dispatch(AuthActions.loadUserFromStorage());
+  }
 }
