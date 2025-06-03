@@ -5,11 +5,6 @@
   --blue: #27384c;
   --yellow: #ffb300;
   --white: #fcfbfa;
-
-  /* You can also add semantic color names */
-  --primary: #27384c;
-  --accent: #ffb300;
-  --background: #fcfbfa;
 }
 
 /* Optional: Base styles using your colors */

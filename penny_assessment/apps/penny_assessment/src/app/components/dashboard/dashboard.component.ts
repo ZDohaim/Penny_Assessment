@@ -65,12 +65,12 @@ import * as AuthActions from '../../store/auth/auth.actions';
     `
       .dashboard-container {
         min-height: 100vh;
-        background-color: #f8f9fa;
+        background-color: var(--white);
       }
 
       .dashboard-header {
-        background-color: #007bff;
-        color: white;
+        background-color: var(--blue);
+        color: var(--white);
         padding: 1rem 2rem;
         display: flex;
         justify-content: space-between;
@@ -90,17 +90,19 @@ import * as AuthActions from '../../store/auth/auth.actions';
       }
 
       .signout-btn {
-        background-color: #dc3545;
-        color: white;
+        background-color: var(--yellow);
+        color: var(--blue);
         border: none;
         padding: 0.5rem 1rem;
         border-radius: 4px;
         cursor: pointer;
         font-size: 0.9rem;
+        font-weight: 600;
       }
 
       .signout-btn:hover {
-        background-color: #c82333;
+        background-color: var(--yellow);
+        transform: scale(1.05);
       }
 
       .dashboard-content {
@@ -111,28 +113,30 @@ import * as AuthActions from '../../store/auth/auth.actions';
 
       .user-card,
       .info-card {
-        background: white;
+        background: var(--white);
         padding: 2rem;
         border-radius: 8px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         margin-bottom: 2rem;
+        border: 1px solid #e0e0e0;
       }
 
       .user-card h2,
       .info-card h2 {
         margin-top: 0;
-        color: #333;
-        border-bottom: 2px solid #007bff;
+        color: var(--blue);
+        border-bottom: 2px solid var(--yellow);
         padding-bottom: 0.5rem;
       }
 
       .user-details p {
         margin: 0.75rem 0;
         font-size: 1rem;
+        color: var(--blue);
       }
 
       .status-active {
-        color: #28a745;
+        color: var(--yellow);
         font-weight: 600;
       }
 

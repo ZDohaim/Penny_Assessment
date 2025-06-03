@@ -96,11 +96,11 @@ import {
         align-items: center;
         min-height: 100vh;
         padding: 20px;
-        background-color: #f5f5f5;
+        background-color: var(--blue);
       }
 
       .auth-form {
-        background: white;
+        background: var(--white);
         padding: 2rem;
         border-radius: 8px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -111,7 +111,7 @@ import {
       h2 {
         text-align: center;
         margin-bottom: 2rem;
-        color: #333;
+        color: var(--blue);
       }
 
       .form-group {
@@ -122,7 +122,7 @@ import {
         display: block;
         margin-bottom: 0.5rem;
         font-weight: 600;
-        color: #555;
+        color: var(--blue);
       }
 
       input {
@@ -147,21 +147,23 @@ import {
       .submit-btn {
         width: 100%;
         padding: 0.75rem;
-        background-color: #007bff;
-        color: white;
+        background-color: var(--yellow);
+        color: var(--blue);
         border: none;
         border-radius: 4px;
         font-size: 1rem;
         cursor: pointer;
         margin-top: 1rem;
+        font-weight: 600;
       }
 
       .submit-btn:hover:not(:disabled) {
-        background-color: #0056b3;
+        background-color: var(--yellow);
+        font-weight: 600;
       }
 
       .submit-btn:disabled {
-        background-color: #6c757d;
+        background-color: var(--yellow);
         cursor: not-allowed;
       }
 
@@ -171,7 +173,8 @@ import {
       }
 
       .auth-link a {
-        color: #007bff;
+        color: var(--blue);
+        font-weight: 600;
         text-decoration: none;
       }
 
