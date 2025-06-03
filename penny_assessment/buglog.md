@@ -23,3 +23,6 @@ named docker instead of Docker
 was COPYing only a couple of things
 moved Docker to root instead of in /api
 unable to fix for now
+
+BUG:
+Mondo Atlas Network IP (make sure to add IP address) for local testing

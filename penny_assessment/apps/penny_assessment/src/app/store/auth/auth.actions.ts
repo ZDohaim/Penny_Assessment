@@ -6,7 +6,6 @@ import {
   AuthResponse,
 } from '../../models/auth.model';
 
-// Signup Actions
 export const signup = createAction(
   '[Auth] Signup',
   props<{ signupData: SignupDto }>()
@@ -22,7 +21,6 @@ export const signupFailure = createAction(
   props<{ error: string }>()
 );
 
-// Signin Actions
 export const signin = createAction(
   '[Auth] Signin',
   props<{ signinData: SigninDto }>()
@@ -38,13 +36,10 @@ export const signinFailure = createAction(
   props<{ error: string }>()
 );
 
-// Signout Action
 export const signout = createAction('[Auth] Signout');
 
-// Load User from Storage
 export const loadUserFromStorage = createAction(
   '[Auth] Load User From Storage'
 );
 
-// Clear Error
 export const clearError = createAction('[Auth] Clear Error');

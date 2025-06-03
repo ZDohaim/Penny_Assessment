@@ -8,10 +8,10 @@ import { User, SignupDto, SigninDto, AuthResponse } from '../models/auth.model';
   providedIn: 'root',
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:3000/api/auth'; // Fixed URL with api prefix
+  private apiUrl = 'http://localhost:3000/api/auth';
   private tokenKey = 'auth_token';
   private userKey = 'auth_user';
-  private tokenExpirationTime = 8 * 60 * 60 * 1000; // 8 hours in milliseconds
+  private tokenExpirationTime = 8 * 60 * 60 * 1000;
 
   private currentUserSubject = new BehaviorSubject<User | null>(
     this.getUserFromStorage()
